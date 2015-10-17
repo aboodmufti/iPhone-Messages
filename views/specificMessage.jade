@@ -1,0 +1,34 @@
+extends layoutSecond
+
+block header
+  script(src='../libs/jquery.js')
+  script(src="../javascripts/messages.js")
+  
+  
+block content
+  br
+  form(action="/", method="get")
+        button(type="submit" ) Inbox      
+  br
+  
+  h2 Messages from : #{messages[0].number} 
+    a(href="#" id="pdf") [Save as PDF]
+  
+  
+  - for (i=0; i < messages.length; i++)
+      table
+        - if (messages[i].is_from_me == 0)
+            tr
+                td(class="convoMessage")
+                    p #{messages[i].text}
+                        br
+                        span(class="time") &nbsp;&nbsp;&nbsp;#{messages[i].service} #{messages[i].time} 
+                td(class="other")
+        - else
+            tr
+                td(class="other")
+                td(class="convoMessageRight")
+                    p #{messages[i].text}
+                        br
+                        span(class="time") &nbsp;&nbsp;&nbsp;#{messages[i].service} #{messages[i].time} 
+  

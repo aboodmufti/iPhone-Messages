@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1(align="center", id="h1Login")  Cl{ass}istant
+  - if(error)
+    div.error #{error}
+  div(align="center")
+    form(action="/login", method="post")
+        div
+            p(class="error")= msg
+            input(type="text", name="username" ,placeholder="Username", class="login_input")
+            input(type="password", name="password", placeholder="Password", class="login_input")
+            br
+            br
+        button(type="submit", style={width: "100px"}) Login
+    form(action="/newAccount", method="get")
+        button(type="submit") Create Account   
+
+
+    
+    

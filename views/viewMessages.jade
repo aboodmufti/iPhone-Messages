@@ -1,0 +1,22 @@
+extends layoutSecond
+
+block header
+  script(src='../libs/jquery.js')
+  script(src="../javascripts/messages.js")
+  
+  
+
+block content
+  h1= title
+  br
+  br
+  - for (i=0; i < messages.length; i++)
+          -var link = "/messages/"+messages[i].handle_id;
+          a(href=link)
+            div(class="message")
+              //input(type="hidden", name="name", value=messages[i].user_two_name)
+              b(class="sender") #{messages[i].number}
+              p(class="content") #{messages[i].text}
+              p(class="time") #{messages[i].time}
+          br      
+  

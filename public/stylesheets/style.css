@@ -1,0 +1,197 @@
+img {
+  width:70%;
+  height:70%;
+}
+
+#pdf{
+    font-size: 20px;
+}
+
+
+table{
+    table-layout: fixed;
+    width: 1000px;
+    max-width: 1000px;
+}
+
+td.other{
+    width: 600px;
+}
+
+tr{
+  display:table-row;
+  height:30px;
+  width: 950px;
+  max-width: 950px;
+}
+
+.convoMessageRight{
+  border: 1px solid;
+  font-size: 16px;
+  width: 360px;
+  max-width: 360px;
+  /*background:#CBF0BB;*/
+  border-color: #B5D7A7;
+  border-radius:3px ;
+  /*float:right;*/
+  position:relative;
+  /*display:block;*/
+  clear: both;
+  top:5px;
+  right:10px;
+  bottom: 15px;
+  margin-top:5px;
+  margin-bottom:5px;
+  padding-left:5px;
+  padding-right:5px;
+
+}
+
+.convoMessage{
+  border: 1px solid;
+  font-size: 16px;
+  width: 360px;
+  max-width: 360px;
+  /*background:#B3E5F2;*/
+  border-color: #A0CEDA;
+  border-radius:3px ;
+  position:relative;
+  clear: both;
+  top:5px;
+  left:10px;
+  margin-top:5px;
+  margin-bottom:5px;
+  padding-left:5px;
+  padding-right:5px;
+  /*float: left;*/
+}
+
+
+.error {
+  color: #BB0000;
+}
+
+#h1Login{
+  color: #E6B800;
+  font-size: 70px;
+
+}
+.h1other{
+  color: #E6B800;
+  font-size: 40px;
+
+}
+
+
+button {
+    border: 2px solid #297ACC;
+    background: #5CADFF;
+    height: 30px;
+    /*width: 90px;*/
+    color: White;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right:3px;
+    margin-bottom:3px;
+}
+button:hover{
+  background: #297ACC;
+
+}
+button:active{
+  background: #7DBDFF;
+}
+
+
+a{
+  cursor: pointer;
+}
+
+b{
+  font-size: 17px;
+  font-weight:bold;
+}
+
+
+div.message{
+  border: 1px solid;
+  font-size: 15px;
+  /*width: 400px;
+  height: 40px;*/
+  cursor:pointer;
+  background:#E8F8FF;
+  border-color: #B2E6FF;
+  border-radius:3px ;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top:5px;
+  margin-right:0px;
+  width: 100%;
+}
+
+.sender{
+  font-weight: bold;
+  color:black;
+  text-decoration:none;
+}
+
+.content{
+  font-weight: normal;
+  color:black;
+  text-decoration:none;
+}
+
+
+a {
+  color: #00B7FF;
+  text-decoration:none;
+}
+
+.headerDiv{
+  border-bottom: 1px solid #E7E8E8;
+}
+
+.welcome{
+  font-size:25px;
+  color:#9C9C9C;
+}
+
+#convo{
+  width:100%;
+  height:350px;
+  overflow-y:auto;
+  border: 1px solid;
+  font-size: 15px;
+  background:#E8F8FF;
+  border-color: #B2E6FF;
+  border-top-left-radius:3px ;
+  border-top-right-radius:3px ;
+  position:relative;
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+}
+
+
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Sans Unicode","Lucida Grande",  sans-serif;
+}
+
+.time{
+  font-weight: normal;
+  font-size:11px;
+  color:grey;
+  text-decoration:none;
+}
+
+#middle{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+

@@ -1,0 +1,25 @@
+extends layoutSecond
+
+block content
+  h1= title
+  - if(error)
+    div.error #{error}
+  form(action="/viewMessages", method="get")
+    button(type="submit" ) Inbox
+  div
+    form(action="/messages", method="post" )
+        div
+            p To: 
+            input#title(type="text", name="to", value=Username)
+        div
+            p Message:
+            textarea(cols="40", rows="5",
+                     name="content", wrap="virtual")
+        br                        
+        button(type="submit" , class="green") Send
+
+             
+    form(action="/viewMessages", method="get")
+        button(type="submit" id="cancel" class="gray") Cancel
+
+
