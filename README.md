@@ -9,12 +9,14 @@
 
 ## Usage
 - ### Running
-  - Start the server: 
+  1. Start the server: 
+  
      ```sh
      $ node bin/www 
      ```
-- ### On the browser
-  - Visit: localhost:3000
+  2. On the browser:
+
+     visit localhost:3000
 
 ## Author
 &nbsp;&nbsp;&nbsp;&nbsp; Abdulrahman Mufti
